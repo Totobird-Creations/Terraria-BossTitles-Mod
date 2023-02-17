@@ -1,0 +1,9 @@
+Adds introduction titles when a boss spawns.
+
+Terraria and Calamity bosses are supported.
+Minibosses are not included.
+
+This mod works in singleplayer, but multiplayer has not been tested yet.
+Hopefully that will happen soon.
+
+This is heavily inspired by part of the Calamity Infernum Mode Mod.

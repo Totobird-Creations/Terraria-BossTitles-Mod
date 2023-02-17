@@ -1,0 +1,11 @@
+displayName = Boss Titles
+author = Totobird Creations
+version = 0.3
+homepage = https://github.com/Totobird-Creations/Terraria-BossTitles-Mod
+
+weakReferences = CalamityMod
+side = Client
+
+hideCode = false
+hideResource = false
+includeSource = true
