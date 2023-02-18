@@ -5,7 +5,7 @@ using boss_titles.Util;
 
 
 namespace boss_titles.Content.Instance.CalamityBoss {
-    public class AdultEidolonWyrm : BaseTitle {
+    public class BossRush : BaseTitle {
 
         public override string Subtitle => "Ensemble Of Fools";
         public override string Title    => "The Boss Rush";
