@@ -117,7 +117,7 @@ namespace boss_titles.Content {
         public void Draw(GameTime time) {
             if (this.animation_queue.Count > 0) {
                 BaseTitle data                       = this.animation_queue[0];
-                string    real_subtitle              = this.Intersperse(this.BossRushActive() ? "Boss Rush" : data.Subtitle, " ");
+                string    real_subtitle              = this.Intersperse(data.Subtitle, " ");
                 string    subtitle                   = this.TypeOutSubtitle(real_subtitle);
                 double    title_intersperse_progress = this.animation_state == AnimationState.ShowingTitle ? 1.0d - this.animation_progress : 0.0d;
                 string    title                      = this.Intersperse(data.Title, new string(' ', (int)Math.Ceiling(title_intersperse_progress * (double)title_intersperse_max)));
@@ -145,16 +145,6 @@ namespace boss_titles.Content {
                 this.DrawTextWithShadow(title, title_pos, title_scale, data.GetTitleColour(time), title_alpha, shadow_spread);
 
             }
-        }
-
-
-        internal bool BossRushActive() {
-            return boss_titles.calamity_mod != null && (
-                (bool)boss_titles.calamity_mod.GetType().Assembly
-                    .GetType("CalamityMod.Events.BossRushEvent", false, false)
-                    .GetField("BossRushActive")
-                    .GetValue(null)
-            );
         }
 
 

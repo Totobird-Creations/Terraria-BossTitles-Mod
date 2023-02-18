@@ -7,5 +7,5 @@ weakReferences = CalamityMod
 side = Client
 
 hideCode = false
-hideResource = false
+hideResources = false
 includeSource = true
